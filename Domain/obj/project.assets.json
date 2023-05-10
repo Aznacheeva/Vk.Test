@@ -1,0 +1,122 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "OneOf/3.0.243": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        }
+      },
+      "Api.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Api.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OneOf/3.0.243": {
+      "sha512": "7zbyWxAbh0FZTVTpfqd8lIo9ejgoxPuadZgYTZLCq8aCtLQ5biQZ8gv61hpCbi/XuII0JlqfOTfocvv4wu8Xdw==",
+      "type": "package",
+      "path": "oneof/3.0.243",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/OneOf.dll",
+        "lib/net45/OneOf.dll",
+        "lib/netstandard1.3/OneOf.dll",
+        "lib/netstandard2.0/OneOf.dll",
+        "oneof.3.0.243.nupkg.sha512",
+        "oneof.nuspec"
+      ]
+    },
+    "Api.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Api.Contracts/Api.Contracts.csproj",
+      "msbuildProject": "../Api.Contracts/Api.Contracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Api.Contracts >= 1.0.0",
+      "OneOf >= 3.0.243"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\fiepa\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\fiepa\\Desktop\\Vk.Test\\Vk.Test\\Domain\\Domain.csproj",
+      "projectName": "Domain",
+      "projectPath": "C:\\Users\\fiepa\\Desktop\\Vk.Test\\Vk.Test\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\fiepa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fiepa\\Desktop\\Vk.Test\\Vk.Test\\Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\fiepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\fiepa\\Desktop\\Vk.Test\\Vk.Test\\Api.Contracts\\Api.Contracts.csproj": {
+              "projectPath": "C:\\Users\\fiepa\\Desktop\\Vk.Test\\Vk.Test\\Api.Contracts\\Api.Contracts.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "OneOf": {
+            "target": "Package",
+            "version": "[3.0.243, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

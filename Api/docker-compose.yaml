@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  db:
+    container_name: vk.test
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=vktest
+      - POSTGRES_USER=vktest
+      - POSTGRES_DB=vktest
+    image: postgres:15
